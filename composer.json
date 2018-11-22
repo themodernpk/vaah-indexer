@@ -1,0 +1,16 @@
+{
+  "name": "webreinvent/vaah-indexer",
+  "type": "library",
+  "description": "Your package description goes here",
+  "keywords": ["pinger", "indexing", "google", "ping", "search engines", "google", "yahoo", "yandex", "bing", "pingomatic", "ping-o-matic"],
+  "homepage": "https://www.webreinvent.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pradeep Kumar",
+      "email": "webreinvent@gmail.com",
+      "homepage": "https://www.webreinvent.com",
+      "role": "Developer"
+    }
+  ]
+}
