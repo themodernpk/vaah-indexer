@@ -27,7 +27,7 @@ Vaah Indexer, Get Google to Index Your Website Pages Faster
 
 
 
-#### Install
+### Install
 ```bash
    composer install webreinvent/vaah-indexer
 ```
@@ -50,7 +50,7 @@ If you want to use ```Indexer``` facade, add to same file at the aliases section
    ]
 ```
 
-#### Publish with artsian
+### Publish with artsian
 
 ```bash
    php artisan vendo
