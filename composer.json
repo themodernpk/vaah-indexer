@@ -1,7 +1,7 @@
 {
   "name": "webreinvent/vaah-indexer",
   "type": "library",
-  "description": "Your package description goes here",
+  "description": "Get Google to Index Your Website Faster",
   "keywords": ["pinger", "indexing", "google", "ping", "search engines", "google", "yahoo", "yandex", "bing", "pingomatic", "ping-o-matic"],
   "homepage": "https://www.webreinvent.com",
   "license": "MIT",
