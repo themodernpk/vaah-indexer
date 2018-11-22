@@ -6,12 +6,24 @@ Vaah Indexer, Get Google to Index Your Website Pages Faster
 
 #### All In One Laravel Package to get your web pages indexed fast!
 
+### How to force Google to index your page fast?
+- "Ping" your website
+- Post your page url to high traffic sites
+- Post status on Social Media
+
 ### Features
+
+
+#### Ping
 :white_check_mark: Ping Service
 
+#### Social Media
 :black_square_button: Facebook Status
 
 :black_square_button: Twitter Status
+
+#### High Traffic Website
+:black_square_button: Reddit
 
 
 
