@@ -12,5 +12,13 @@
       "homepage": "https://www.webreinvent.com",
       "role": "Developer"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "WebReinvent\\VaahIndexer\\": "src/"
+    }
+  },
+  "require": {
+    "ixudra/curl": "^6.10"
+  }
 }
