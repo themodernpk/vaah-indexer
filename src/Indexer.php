@@ -29,7 +29,7 @@ class Indexer{
         $domain = null;
         $parse = parse_url($url);
 
-        if($parse['host'])
+        if(is_array($parse) && isset($parse['host']))
         {
             $domain = $parse['host'];
         }
@@ -48,30 +48,44 @@ class Indexer{
 
     public function send($service_url, $title, $url, $rss = null)
     {
+
         $xml = $this->getXml($title, $url, $rss);
 
         $response = Curl::to($service_url)
             ->withData( $xml )
+            ->returnResponseObject()
             ->post();
 
         return $response;
+        
     }
 
 
     public function sendToAll($title, $url, $rss = null)
     {
 
-        $xml = $this->getXml($title, $url, $rss);
 
         $result = [];
         foreach ($this->services as $service) {
-            $result[$service] = $this->send($service, $xml);
+            $result[$service] = $this->send($service, $title, $url, $rss);
         }
 
         //$this->pingPingOMatic($title, $url, $rss);
 
         return $result;
 
+    }
+
+    public function parseXml($string) {
+        if ($string) {
+            $xml = @simplexml_load_string($string, 'SimpleXMLElement', LIBXML_NOCDATA);
+            if(!$xml)
+            {
+                return 'Failed To Parse XML';
+            }
+            return json_decode(json_encode((array) $xml), 1);
+        }
+        return null;
     }
 
 

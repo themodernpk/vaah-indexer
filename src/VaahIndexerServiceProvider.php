@@ -2,6 +2,8 @@
 
 namespace WebReinvent\VaahIndexer;
 
+use Illuminate\Support\ServiceProvider;
+
 class VaahIndexerServiceProvider extends ServiceProvider
 {
     /**
@@ -36,7 +38,7 @@ class VaahIndexerServiceProvider extends ServiceProvider
     private function registerVaahIndexer()
     {
         $this->app->singleton('indexer', function ($app) {
-            return new VaahIndexer();
+            return new Indexer();
         });
     }
 
