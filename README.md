@@ -4,7 +4,16 @@ Vaah Indexer, Get Google to Index Your Website Pages Faster
 [![GitHub issues](https://img.shields.io/github/issues/webreinvent/vaah-indexer.svg)](https://github.com/webreinvent/vaah-indexer/issues)
 
 
-### All In One Laravel Package to get your web pages indexed fast!
+#### All In One Laravel Package to get your web pages indexed fast!
+
+### Features
+:white_check_mark: Ping Service
+
+:black_square_button: Facebook Status
+
+:black_square_button: Twitter Status
+
+
 
 #### Install
 ```bash
