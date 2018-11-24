@@ -53,9 +53,7 @@ If you want to use ```Indexer``` facade, add to same file at the aliases section
 ### Publish with artsian
 
 ```bash
-   php artisan vendo
-   r:publish --provider="WebReinvent\VaahIndex
-   erServiceProvider"
+   php artisan vendor:publish --provider="WebReinvent\VaahIndexerServiceProvider"
 ```
 
 Publishes a ```vaah-indexer.php``` file to config directory. Add and remove all your ping sites in this file. Be sure to review the ping responses from the ping sites because there are many ping sites and do not all provide a uniform response. Some may require additional parameters.
@@ -81,4 +79,4 @@ echo $response->content;
 ```
 
 ### Further plans
-- Add support to upload to Facebook, Twitter
+- Add support to post on Facebook, Twitter
