@@ -65,18 +65,18 @@ Publishes a ```vaah-indexer.php``` file to config directory. Add and remove all 
 
 Send to all ping services:
 ```bash
-$response = Indexer::sendToAll($title, $page_url);
+$response = Indexer::sendPingToAll($title, $page_url);
 ```
 
 To get http status:
 ```bash
-$response = Indexer::sendToAll($title, $page_url);
+$response = Indexer::sendPingToAll($title, $page_url);
 echo $response->status;
 ```
 
 To get response content:
 ```bash
-$response = Indexer::sendToAll($title, $page_url);
+$response = Indexer::sendPingToAll($title, $page_url);
 echo $response->content;
 ```
 

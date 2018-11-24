@@ -46,13 +46,14 @@ class Indexer{
     }
 
 
-    public function send($service_url, $title, $url, $rss = null)
+    public function sendPing($service_url, $title, $url, $rss = null)
     {
 
         $xml = $this->getXml($title, $url, $rss);
 
         $response = Curl::to($service_url)
             ->withData( $xml )
+            ->withContentType('text/xml')
             ->returnResponseObject()
             ->post();
 
@@ -61,13 +62,13 @@ class Indexer{
     }
 
 
-    public function sendToAll($title, $url, $rss = null)
+    public function sendPingToAll($title, $url, $rss = null)
     {
 
 
         $result = [];
         foreach ($this->services as $service) {
-            $result[$service] = $this->send($service, $title, $url, $rss);
+            $result[$service] = $this->sendPing($service, $title, $url, $rss);
         }
 
         //$this->pingPingOMatic($title, $url, $rss);
