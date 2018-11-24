@@ -29,7 +29,7 @@ Vaah Indexer, Get Google to Index Your Website Pages Faster
 
 ### Install
 ```bash
-   composer install webreinvent/vaah-indexer
+   composer require webreinvent/vaah-indexer
 ```
  
 Add to your config/app.php file to providers section:
